@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "/Users/djairsoares/.config/herd-lite/bin/php",
+            "args": [
+                "/Users/djairsoares/WorkSpace/monetiza/inseminacao/gadotech/artisan",
+                "boost:mcp"
+            ]
+        }
+    }
+}
