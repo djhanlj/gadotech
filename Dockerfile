@@ -16,6 +16,8 @@ RUN apk add --no-cache \
     oniguruma-dev \
     linux-headers \
     redis \
+    nodejs \
+    npm \
     $PHPIZE_DEPS \
     bash
 

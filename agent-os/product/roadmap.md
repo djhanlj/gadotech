@@ -4,7 +4,7 @@
 
 1. [x] Configuração Base do Laravel 12 — Configurar ambiente de desenvolvimento com Laravel 12, instalação de dependências, setup do docker-compose com PostgreSQL e Redis, variáveis de ambiente e estrutura de pastas do projeto. `M`
 
-2. [ ] Instalação e Configuração do Inertia.js + Vue.js — Integrar Inertia.js com Vue.js 3, configurar build pipeline com Vite, hot module replacement (HMR) e estrutura base de componentes reutilizáveis. `M`
+2. [x] Instalação e Configuração do Inertia.js + Vue.js — Integrar Inertia.js com Vue.js 3, configurar build pipeline com Vite, hot module replacement (HMR) e estrutura base de componentes reutilizáveis. `M`
 
 3. [ ] Sistema de Autenticação Web — Implementar Laravel Sanctum/Passport com autenticação baseada em cookies para web, login, logout, reset de senha e middleware de autenticação. `L`
 
