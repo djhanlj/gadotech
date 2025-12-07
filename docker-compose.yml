@@ -29,14 +29,7 @@ services:
       - MAIL_PORT=1025
       - LOG_CHANNEL=single
     volumes:
-      - ./app:/var/www/html/app
-      - ./bootstrap:/var/www/html/bootstrap
-      - ./config:/var/www/html/config
-      - ./database:/var/www/html/database
-      - ./resources:/var/www/html/resources
-      - ./routes:/var/www/html/routes
-      - ./storage:/var/www/html/storage
-      - ./tests:/var/www/html/tests
+      - .:/var/www/html
     ports:
       - "9000:9000"
     depends_on:
@@ -56,7 +49,9 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
       POSTGRES_DB: ${DB_DATABASE:-app}
     volumes:
-      - ./storage/postgres:/var/lib/postgresql/data
+      - ./docker/postgres/postgresql.conf:/etc/postgresql/postgresql.conf:ro
+      - ./docker/postgres/pg_hba.conf:/etc/postgresql/pg_hba.conf:ro
+    command: postgres -c config_file=/etc/postgresql/postgresql.conf -c hba_file=/etc/postgresql/pg_hba.conf
     ports:
       - "5432:5432"
     healthcheck:

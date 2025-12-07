@@ -1,4 +1,4 @@
-FROM php:8.2-fpm-alpine
+FROM php:8.4-fpm-alpine
 
 # Definir workdir
 WORKDIR /var/www/html
@@ -11,19 +11,22 @@ RUN apk add --no-cache \
     zip \
     unzip \
     postgresql-client \
+    postgresql-dev \
+    libxml2-dev \
+    oniguruma-dev \
+    linux-headers \
+    redis \
+    $PHPIZE_DEPS \
     bash
 
 # Instalar extensões PHP necessárias
+# Nota: ctype, fileinfo, tokenizer, json já vêm habilitadas por padrão no PHP 8.x
 RUN docker-php-ext-install \
     pdo \
     pdo_pgsql \
     pgsql \
     mbstring \
-    json \
     bcmath \
-    ctype \
-    fileinfo \
-    tokenizer \
     xml
 
 # Instalar extensão Redis

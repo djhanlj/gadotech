@@ -1,0 +1,13 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    level: 8
+
+    paths:
+        - app/
+
+    excludePaths:
+        - app/Features/*/database/
+
+    # ignoreErrors: # Adicionar padroes conforme necessario

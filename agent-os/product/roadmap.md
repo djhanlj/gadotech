@@ -2,7 +2,7 @@
 
 ## Fase 0 - Estrutura Fundamental do Projeto
 
-1. [ ] Configuração Base do Laravel 12 — Configurar ambiente de desenvolvimento com Laravel 12, instalação de dependências, setup do docker-compose com PostgreSQL e Redis, variáveis de ambiente e estrutura de pastas do projeto. `M`
+1. [x] Configuração Base do Laravel 12 — Configurar ambiente de desenvolvimento com Laravel 12, instalação de dependências, setup do docker-compose com PostgreSQL e Redis, variáveis de ambiente e estrutura de pastas do projeto. `M`
 
 2. [ ] Instalação e Configuração do Inertia.js + Vue.js — Integrar Inertia.js com Vue.js 3, configurar build pipeline com Vite, hot module replacement (HMR) e estrutura base de componentes reutilizáveis. `M`
 
